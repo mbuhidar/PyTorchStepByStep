@@ -75,7 +75,7 @@ class StepByStep(object):
             yhat = self.model(x)
             # Step 2 - Computes the loss
             loss = self.loss_fn(yhat, y)
-            # Step 3 - Computes gradients for both "a" and "b" parameters
+            # Step 3 - Computes gradients for parameters in the computation graph
             loss.backward()
             # Step 4 - Updates parameters using gradients and the learning rate
             self.optimizer.step()

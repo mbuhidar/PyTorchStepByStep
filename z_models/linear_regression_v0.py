@@ -303,7 +303,7 @@ def main():
     """
 
     # Generate data
-    x, y = generate_data_linear(true_b=1, true_w=2, N=1000, r_seed=42)
+    x, y = generate_data_linear(true_b=20, true_w=100, N=1000, r_seed=42)
 
     # Prepare data
     train_loader, val_loader = prepare_data(x, y)
