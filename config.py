@@ -5,7 +5,7 @@ import requests
 import subprocess
 import shutil
 from IPython.display import HTML, display
-from tensorboard import manager
+# from tensorboard import manager
 
 def tensorboard_cleanup():
     info_dir = manager._get_info_dir()
